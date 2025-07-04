@@ -1,0 +1,116 @@
+:root {
+    --background-color: wheat;
+    --text-color: #333;
+    --container-bg-color: white;
+    --subtext-color: #666;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+    background-color: var(--container-bg-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.container p {
+    font-size: 18px;
+    color: var(--subtext-color);
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-color: blue;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login {
+    background-color: blue;
+    color: #fff;
+}
+
+.btn-login:hover {
+    background-color: lightblue;
+}
+
+.btn-register {
+    background-color: green;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background-color: greenyellow;
+}
+
+.btn-logout {
+    background-color: green;
+    color: #fff;
+}
+
+.btn-logout:hover {
+    background-color: greenyellow;
+}
